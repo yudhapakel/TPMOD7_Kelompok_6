@@ -20,3 +20,6 @@
 <None Update="tp7_2_103022300010.json">
   <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 </None>
+  </ItemGroup>
+
+</Project>
