@@ -12,25 +12,25 @@ namespace TPMOD7_Kelompok_6
     {
         public class MataKuliah
         {
-            public string Kode { get; set; }
-            public string Nama { get; set; }
+            public string code { get; set; }
+            public string name { get; set; }
         }
 
         public class Kuliah
         {
-            public List<MataKuliah> MataKuliah { get; set; }
+            public List<MataKuliah> course { get; set; }
         }
 
         public static void ReadJSON()
         {
-            string json = File.ReadAllText("tp7_2_12345678.json");
+            string json = File.ReadAllText("tp7_2_103022300010.json");
             Kuliah data = JsonSerializer.Deserialize<Kuliah>(json);
 
             Console.WriteLine("Daftar mata kuliah yang diambil:");
             int i = 1;
-            foreach (var mk in data.MataKuliah)
+            foreach (var mk in data.course)
             {
-                Console.WriteLine($"MK {i} {mk.Kode} - {mk.Nama}");
+                Console.WriteLine($"MK {i} {mk.code} - {mk.name}");
                 i++;
             }
         }
