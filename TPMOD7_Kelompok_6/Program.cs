@@ -12,14 +12,8 @@ namespace TPMOD7_Kelompok_6
     {
         static void Main(string[] args)
         {
-            DataMahasiswa103022300005.ReadJSON();
-            KuliahMahasiswa103022300005.ReadJSON();
-
-            DataMahasiswa103022300010.ReadJSON();
-            KuliahMahasiswa103022300010.ReadJSON();
-
-            DataMahasiswa103022330091.ReadJSON();
-            KuliahMahasiswa103022330091.readJSON();
+            DataMahasiswa103022330122.ReadJSON();
+            KuliahMahasiswa103022330122.ReadJSON();
         }
     }
 }
