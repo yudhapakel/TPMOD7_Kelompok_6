@@ -2,19 +2,26 @@
 using System.IO;
 using System.Text.Json;
 
-public class DataMahasiswa12345678
+public class DataMahasiswa103022300010
 {
     public class Mahasiswa
     {
-        public string Nama { get; set; }
-        public string Nim { get; set; }
-        public string Fakultas { get; set; }
+        public Nama nama { get; set; } 
+        public long nim { get; set; }
+        public string fakultas { get; set; }
+    }
+
+    public class Nama
+    {
+        public string depan { get; set; }
+        public string belakang { get; set; }
     }
 
     public static void ReadJSON()
     {
-        string json = File.ReadAllText("tp7_1_12345678.json");
+        string json = File.ReadAllText("tp7_1_103022300010.json");
         Mahasiswa mhs = JsonSerializer.Deserialize<Mahasiswa>(json);
-        Console.WriteLine($"Nama {mhs.Nama} dengan nim {mhs.Nim} dari fakultas {mhs.Fakultas}");
+        Console.WriteLine($"Nama {mhs.nama.depan} {mhs.nama.belakang} dengan nim {mhs.nim} dari fakultas {mhs.fakultas}");
+
     }
 }

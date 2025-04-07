@@ -1,4 +1,10 @@
-﻿using System;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
+using System.Text.Json;
 
 namespace TPMOD7_Kelompok_6
 {
@@ -8,6 +14,9 @@ namespace TPMOD7_Kelompok_6
         {
             DataMahasiswa103022300005.ReadJSON();
             KuliahMahasiswa103022300005.ReadJSON();
+
+            DataMahasiswa103022300010.ReadJSON();
+            KuliahMahasiswa103022300010.ReadJSON();
         }
     }
 }
